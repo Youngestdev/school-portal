@@ -1,4 +1,5 @@
 // Require core modules.
+const path = require('path');
 const express = require('express');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
@@ -10,7 +11,7 @@ const app = express();
 
 // setting static directory where  css, images and side-javascript codes are going to be kept 
 // This should be path.join() stuff! Gosh
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname, '/public')));
 
 // connect to mongodb. I know this isn't safe..
 mongoose.connect('mongodb://127.0.0.1:27017/stuportal', {
