@@ -1,0 +1,25 @@
+<style>
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .form {
+        font-family: 'cursive';
+    }
+</style>
+
+<h2 align="center">Registration</h2>
+<b>Fill in the form below and click the submit button when you're done.</b>
+<div class="form rows" align="center">
+
+    <form action="/profile" method="post">
+        <b>
+        Name: <input type="text" name="name" id="name" placeholder="e.g Abdulazeez Azeez" required />
+        Registration Number: <input type="text" name="regno" id="regno" placeholder="e.g 1234" maxlength="10" minlength="10" required />
+        Email: <input type="email" name="email" id="email" placeholder="e.g laisi@me.com" required />
+        Password: <input type="password" name="password" id="password" required />
+     </b>
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
